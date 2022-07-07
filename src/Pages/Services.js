@@ -25,11 +25,7 @@ export default function Services() {
           </p>
         </div>
         <div className="h-auto">
-          <IconContext.Provider
-            value={{ color: "#5545A8", className: "print__icon" }}
-          >
-            <BsPrinter />
-          </IconContext.Provider>
+          <img src="/images/party.png" alt="Party Icon" width={60} className="mb-[2rem]"/>
           <h1 className="text-[20px]">Event Management</h1>
           <p className="text-start mt-[2rem] text-[#555555]">
             We’re more than just a boutique event planning firm. We’re a global
@@ -43,11 +39,7 @@ export default function Services() {
           </p>
         </div>
         <div className="h-auto">
-          <IconContext.Provider
-            value={{ color: "#5545A8", className: "print__icon" }}
-          >
-            <BsPrinter />
-          </IconContext.Provider>
+        <img src="/images/digital-marketing.png" alt="Digital" width={60} className="mb-[2rem]"/>
           <h1 className="text-[20px]">Digital Marketing</h1>
           <p className="text-start mt-[2rem] text-[#555555]">
             We focus on your needs so you can focus on growing your business. At
@@ -59,11 +51,7 @@ export default function Services() {
           </p>
         </div>
         <div className="h-auto">
-          <IconContext.Provider
-            value={{ color: "#5545A8", className: "print__icon" }}
-          >
-            <BsPrinter />
-          </IconContext.Provider>
+        <img src="/images/business.png" alt="Business man" width={60} className="mb-[2rem]"/>
           <h1 className="text-[20px]">
             Business consultancy and facility management
           </h1>
@@ -76,11 +64,7 @@ export default function Services() {
           </p>
         </div>
         <div className=" h-auto">
-          <IconContext.Provider
-            value={{ color: "#5545A8", className: "print__icon" }}
-          >
-            <BsPrinter />
-          </IconContext.Provider>
+        <img src="/images/service.png" alt="Customer service" width={60} className="mb-[2rem]"/>
           <h1 className="text-[20px]">Contact center services</h1>
           <p className="text-start mt-[2rem] text-[#555555]">
             We are a leading provider of outsourced contact center service. We
