@@ -56,7 +56,7 @@ export default function CustomerFeedback() {
         </div>
         <div className="bg-[#5545A8] w-[1110px] h-[200px] mt-[5rem] relative">
             <img
-              src="https://images.pexels.com/photos/8033781/pexels-photo-8033781.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="https://images.pexels.com/photos/725877/pexels-photo-725877.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
               alt="Customer image"
               className="w-[80px] h-[80px] top-[-2.5rem] rounded-full object-cover absolute left-0 right-0 mx-auto"
             />
