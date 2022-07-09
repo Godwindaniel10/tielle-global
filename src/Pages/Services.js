@@ -100,7 +100,7 @@ export default function Services() {
         <div className="flex justify-between items-center">
           <div className="w-[600px] h-[550px] mr-[4rem] bg-[url('https://graphicsfamily.com/wp-content/uploads/2020/10/Professional-Bi-fold-Brochure-Design-Free-psd-1180x944.jpg')] bg-center bg-cover"></div>
           <div className="w-[450px] h-auto relative">
-            <h1 className="text-[40px] about-header z-10">
+            <h1 className="text-[40px] about-header">
               See wide range of our services
             </h1>
             <p className="text-start mt-[3rem] text-[#555555]">
@@ -116,7 +116,7 @@ export default function Services() {
               souvenirs. We also do bespoke packages to suit your individual
               unique needs.
             </p>
-            <div className="w-[165px] h-[12px] bg-[#FAD051] absolute top-[6rem] right-[18rem]"></div>
+           {/* <div className="w-[165px] h-[12px] bg-[#FAD051] absolute top-[6rem] right-[18rem] service-yellow"></div> */}
           </div>
         </div>
       </div>

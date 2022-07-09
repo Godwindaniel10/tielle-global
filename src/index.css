@@ -108,6 +108,16 @@ code {
 .star__icon {
   font-size: 25px;
 }
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 340px;
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+
+
+
 
 @media screen and (max-width: 768px) {
   .hamburger {

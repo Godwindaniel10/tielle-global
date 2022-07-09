@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 
 export default function CustomerFeedback() {
   return (
-    <div className="w-full h-auto py-[7rem] absolute bottom-[-68rem] flex justify-center items-center">
+    <div className="w-full h-auto py-[7rem] absolute bottom-[-68rem] flex justify-center items-center border-b-[1px] ">
       <div className="my-0 mx-auto">
         <div className="w-[1110px] h-auto flex justify-between items-end relative">
           <h1 className="text-[40px] about-header w-[300px] z-10">
@@ -55,11 +55,18 @@ export default function CustomerFeedback() {
           </div>
         </div>
         <div className="bg-[#5545A8] w-[1110px] h-[200px] mt-[5rem] relative">
-            <img
-              src="https://images.pexels.com/photos/725877/pexels-photo-725877.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-              alt="Customer image"
-              className="w-[80px] h-[80px] top-[-2.5rem] rounded-full object-cover absolute left-0 right-0 mx-auto"
-            />
+          <img
+            src="https://images.pexels.com/photos/725877/pexels-photo-725877.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="Customer"
+            className="w-[80px] h-[80px] top-[-2.5rem] rounded-full object-cover absolute left-0 right-0 mx-auto"
+          />
+          <div className="flex justify-center items-center h-[100%]">
+            <p className="text-[#fff] text-center w-[550px]">
+              Our comprehensive product range, which continues to grow through
+              research and development initiatives, includes: Graphics design,
+              Posters
+            </p>
+          </div>
         </div>
       </div>
     </div>

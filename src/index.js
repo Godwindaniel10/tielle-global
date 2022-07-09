@@ -7,7 +7,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Contact from './components/Contact/Contact';
+import Contact from './Pages/Contact';
 import Services from './Pages/Services';
 import AboutUs from './Pages/AboutUs';
 
