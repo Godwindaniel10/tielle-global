@@ -1,16 +1,15 @@
-import React from 'react'
+import React from "react";
 
 export default function OurWork() {
   return (
     <>
-         <div className="bg-[rgb(247,247,247)] w-full h-[auto] absolute left-0 right-0 bottom-[-30rem] -z-10 pt-[15rem] pb-[7rem]">
+      <div
+        className="bg-[rgb(247,247,247)] w-full h-[auto] -z-10 pt-[7rem] pb-[7rem]"
+        id="our-work"
+      >
         <div className="w-[1110px] my-0 mx-auto h-auto services-grid-2">
-        <div className=" h-auto flex justify-between items-center p-[20px] rounded-[20px] bg-[#fff] six">
-            <img
-              src="/images/service.png"
-              alt="Customer service"
-              width={60}
-            />
+          <div className=" h-auto flex justify-between items-center p-[20px] rounded-[20px] bg-[#fff] six">
+            <img src="/images/service.png" alt="Customer service" width={60} />
             <div className="ml-[2rem]">
               <h1 className="text-[20px]">Contact center services</h1>
               <p className="text-start mt-[1rem] text-[#555555]">
@@ -19,11 +18,7 @@ export default function OurWork() {
             </div>
           </div>
           <div className=" h-auto flex justify-between items-center p-[20px] rounded-[20px] six">
-            <img
-              src="/images/service.png"
-              alt="Customer service"
-              width={60}
-            />
+            <img src="/images/service.png" alt="Customer service" width={60} />
             <div className="ml-[2rem]">
               <h1 className="text-[20px]">Contact center services</h1>
               <p className="text-start mt-[1rem] text-[#555555]">
@@ -32,11 +27,7 @@ export default function OurWork() {
             </div>
           </div>
           <div className=" h-auto  flex justify-between items-center p-[20px] rounded-[20px] bg-[#fff] six">
-            <img
-              src="/images/service.png"
-              alt="Customer service"
-              width={60}
-            />
+            <img src="/images/service.png" alt="Customer service" width={60} />
             <div className="ml-[2rem]">
               <h1 className="text-[20px]">Contact center services</h1>
               <p className="text-start mt-[1rem] text-[#555555]">
@@ -45,11 +36,7 @@ export default function OurWork() {
             </div>
           </div>
           <div className=" h-auto flex justify-between items-center p-[20px] rounded-[20px] six">
-            <img
-              src="/images/service.png"
-              alt="Customer service"
-              width={60}
-            />
+            <img src="/images/service.png" alt="Customer service" width={60} />
             <div className="ml-[2rem]">
               <h1 className="text-[20px]">Contact center services</h1>
               <p className="text-start mt-[1rem] text-[#555555]">
@@ -58,11 +45,7 @@ export default function OurWork() {
             </div>
           </div>
           <div className=" h-auto flex justify-between items-center p-[20px] rounded-[20px] bg-[#fff] six">
-            <img
-              src="/images/service.png"
-              alt="Customer service"
-              width={60}
-            />
+            <img src="/images/service.png" alt="Customer service" width={60} />
             <div className="ml-[2rem]">
               <h1 className="text-[20px]">Contact center services</h1>
               <p className="text-start mt-[1rem] text-[#555555]">
@@ -71,11 +54,7 @@ export default function OurWork() {
             </div>
           </div>
           <div className=" h-auto flex justify-between items-center p-[20px] rounded-[20px] six">
-            <img
-              src="/images/service.png"
-              alt="Customer service"
-              width={60}
-            />
+            <img src="/images/service.png" alt="Customer service" width={60} />
             <div className="ml-[2rem]">
               <h1 className="text-[20px]">Contact center services</h1>
               <p className="text-start mt-[1rem] text-[#555555]">
@@ -86,5 +65,5 @@ export default function OurWork() {
         </div>
       </div>
     </>
-  )
+  );
 }

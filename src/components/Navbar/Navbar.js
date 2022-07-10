@@ -1,17 +1,35 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 import { AiOutlineFile } from "react-icons/ai";
 import { IconContext } from "react-icons";
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [scrollStyle, setScrollStyle] = useState(false);
+
+  useEffect(() => {
+    const changeNavbarStyle = () => {
+      if (window.scrollY >= 150) {
+        setScrollStyle(true);
+      } else {
+        setScrollStyle(false);
+      }
+    };
+    window.addEventListener("scroll", changeNavbarStyle);
+  }, []);
 
   return (
     <>
-      <nav className="navigation">
-        <Link to="/" className="brand-name">
+      <nav
+        className={
+          scrollStyle
+            ? "navigation sticky top-0 z-50 bg-[#fff] animate-fade-in-down"
+            : "navigation bg-[#F7F7F7] animate-fade-in-up"
+        }
+      >
+        <HashLink to="/" className="brand-name">
           Logo
-        </Link>
+        </HashLink>
         <button
           className="hamburger"
           onClick={() => {
@@ -39,19 +57,27 @@ export default function Navbar() {
         >
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <HashLink to="/">Home</HashLink>
             </li>
             <li>
-              <Link to="/about-us">About us</Link>
+              <HashLink smooth to="#about-us">
+                About us
+              </HashLink>
             </li>
             <li>
-              <Link to="/services">Services</Link>
+              <HashLink smooth to="#services">
+                Services
+              </HashLink>
             </li>
             <li>
-              <Link to="/our-work">Our works</Link>
+              <HashLink smooth to="#our-work">
+                Our works
+              </HashLink>
             </li>
             <li>
-              <Link to="/contact-us">Contact us</Link>
+              <HashLink smooth to="#contact-us">
+                Contact us
+              </HashLink>
             </li>
           </ul>
         </div>

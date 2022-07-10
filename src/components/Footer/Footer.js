@@ -6,7 +6,7 @@ import { IconContext } from "react-icons";
 
 export default function Footer() {
   return (
-    <div className='bg-[rgb(247,247,247)] w-full h-[200px] absolute bottom-[-100.5rem] flex justify-center items-center'>
+    <div className='bg-[rgb(247,247,247)] w-full h-[200px] flex justify-center items-center'>
       <div className="w-[1110px] h-auto flex justify-between items-center">
         <p className='text-[14px] text-[#404040]'>Copyright Tielle Global Enterprise 2018. All rights reserved.</p>
         <div className='flex justify-between items-center w-[180px]'>

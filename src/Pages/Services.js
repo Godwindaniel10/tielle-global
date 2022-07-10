@@ -1,10 +1,11 @@
 import React from "react";
 import { BsPrinter } from "react-icons/bs";
 import { IconContext } from "react-icons";
+import OurWork from "./OurWork";
 
 export default function Services() {
   return (
-    <div className="w-full h-[auto] p-[7rem] border-t-[1px] border-[#a3a3a342] relative ">
+    <div className="w-full h-[auto] border-t-[1px] border-[#a3a3a342] relative" id="services">
       <div className="w-[1110px] my-0 mx-auto h-auto services">
         <div className="h-auto">
           <IconContext.Provider
@@ -120,6 +121,7 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <OurWork/>
     </div>
   );
 }

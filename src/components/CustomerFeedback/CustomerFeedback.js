@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 
 export default function CustomerFeedback() {
   return (
-    <div className="w-full h-auto py-[7rem] absolute bottom-[-68rem] flex justify-center items-center border-b-[1px] ">
+    <div className="w-full h-auto py-[7rem] flex justify-center items-center border-b-[1px] ">
       <div className="my-0 mx-auto">
         <div className="w-[1110px] h-auto flex justify-between items-end relative">
           <h1 className="text-[40px] about-header w-[300px] z-10">

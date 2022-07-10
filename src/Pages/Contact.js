@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 
 export default function Contact() {
   return (
-    <div className="w-full h-auto absolute bottom-[-88rem] py-[7rem] flex justify-center items-center ">
+    <div className="w-full h-auto py-[7rem] flex justify-center items-center" id="contact-us">
       <div className="w-[1110px] h-auto contact">
         <div className=" h-auto">
           <img src="/images/tielle-logo.png" alt="" width={250} className="object-cover"/>

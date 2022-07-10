@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 
-
 export default function Home() {
   return (
-    <div className="bg-[#F7F7F7] w-full h-[120vh] home">
-          <Navbar/>
+    <>
+      <Navbar />
+      <div className="bg-[#F7F7F7] w-full h-[100vh] relative pt-[8rem] home">
         <div className="px-[7rem] flex flex-col justify-center items-center relative">
           <div className="w-[135px] h-[12px] bg-[#FAD051] absolute top-[3rem] right-[26.3rem]"></div>
           <h1 className="header-home z-10 ">
@@ -32,6 +32,7 @@ export default function Home() {
             className="absolute top-[8rem] right-[0]"
           />
         </div>
-    </div>
+      </div>
+    </>
   );
 }

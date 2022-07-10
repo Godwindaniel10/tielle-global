@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutUs() {
   return (
-    <div className="w-full h-[800px] px-[7rem] flex justify-center items-center">
+    <div className="w-full h-[800px] px-[7rem] flex justify-center items-center" id="about-us">
       <div className="flex justify-between items-center">
         <div className="w-[450px] h-auto relative">
           <h1 className="text-[40px] about-header z-10">
