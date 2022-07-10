@@ -28,7 +28,7 @@ export default function Navbar() {
         }
       >
         <HashLink to="/" className="brand-name">
-          Logo
+          <img src="/images/tielle-logo.png" alt="" width={200} className="object-cover"/>
         </HashLink>
         <button
           className="hamburger"
