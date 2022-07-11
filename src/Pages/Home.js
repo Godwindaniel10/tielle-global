@@ -1,7 +1,33 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
+//import { useNavigate } from "react-router-dom";
+import Inquiry from "../components/Inquiry/Inquiry";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import { motion } from "framer-motion";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  p: 4,
+  borderRadius: "20px",
+  width: "800px",
+  height: "700px",
+};
 
 export default function Home() {
+  //let navigate = useNavigate();
+  //function handleClick() {
+  //  navigate("/inquiry");
+  //}
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <>
       <Navbar />
@@ -16,15 +42,21 @@ export default function Home() {
             ability, team and network to project and position our stakeholders
             in global vantage
           </p>
-          <button className="bg-[#5545A8] text-[#fff] py-[17px] px-[50px] mt-[3.5rem] rounded-full font-semibold">
+          <button
+            className="bg-[#5545A8] text-[#fff] py-[17px] px-[50px] mt-[3.5rem] rounded-full font-semibold"
+            onClick={handleOpen}
+          >
             Send an inquiry
           </button>
-          <img
-            src="/images/Metal-Flask-Bottle.png"
-            alt=""
-            width={700}
-            className="absolute top-[6rem] left-[-5rem] bottle"
-          />
+          <motion.div animate={{ rotate: 360 }} transition={{ duration: 2 }} className="absolute top-[6rem] left-[-5rem]">
+            <img
+              src="/images/Metal-Flask-Bottle.png"
+              alt=""
+              width={700}
+              className="bottle"
+            />
+          </motion.div>
+
           <img
             src="/images/business-card.png"
             alt=""
@@ -33,6 +65,11 @@ export default function Home() {
           />
         </div>
       </div>
+      <Modal open={open} onClose={handleClose}>
+        <Box sx={style}>
+          <Inquiry />
+        </Box>
+      </Modal>
     </>
   );
 }

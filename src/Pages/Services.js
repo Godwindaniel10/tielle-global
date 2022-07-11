@@ -117,7 +117,7 @@ export default function Services() {
               souvenirs. We also do bespoke packages to suit your individual
               unique needs.
             </p>
-           {/* <div className="w-[165px] h-[12px] bg-[#FAD051] absolute top-[6rem] right-[18rem] service-yellow"></div> */}
+           <div className="w-[165px] h-[12px] bg-[#FAD051] absolute top-[6rem] right-[18rem] service-yellow"></div> 
           </div>
         </div>
       </div>

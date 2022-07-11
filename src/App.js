@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./Pages/Contact";
 
 export default function App() {
+
   return (
     <div className="relative">
       <Home />
