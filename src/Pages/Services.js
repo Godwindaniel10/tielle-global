@@ -5,7 +5,7 @@ import OurWork from "./OurWork";
 
 export default function Services() {
   return (
-    <div className="w-full h-[auto] border-t-[1px] border-[#a3a3a342] relative" id="services">
+    <div className="w-full h-[auto] border-t-[1px] border-[#a3a3a342] pt-[7rem] relative" id="services">
       <div className="w-[1110px] my-0 mx-auto h-auto services">
         <div className="h-auto">
           <IconContext.Provider
