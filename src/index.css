@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 * {
   margin: 0;
@@ -11,15 +12,13 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -73,16 +72,17 @@ code {
   background-color: #2642af;
 }
 .send-file__btn {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .header-home {
-  font-family: 'Kantumruy Pro', sans-serif;
+  font-family: "Kantumruy Pro", sans-serif;
   font-size: 50px;
   width: 800px;
   text-align: center;
 }
 .about-header {
-  font-family: 'Kantumruy Pro', sans-serif;
+  font-family: "Kantumruy Pro", sans-serif;
 }
 .bottle {
   filter: drop-shadow(10px 50px 14px rgba(0, 0, 0, 0.362));
@@ -90,12 +90,12 @@ code {
 .services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 50px
+  grid-gap: 50px;
 }
 .services-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px
+  grid-gap: 30px;
 }
 .six {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -114,9 +114,71 @@ code {
   justify-content: center;
 }
 
+.input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+input {
+  border: 1px solid rgba(184, 184, 184, 0.552);
+}
+
+.cancel-btn {
+  background: rgba(85, 69, 168, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.dropzone-div {
+  text-align: center;
+  padding: 20px;
+  border: 3px rgb(255, 255, 255) dashed;
+  width: 60%;
+  margin: auto;
+}
+.drop-zone {
+  background: rgba(85, 69, 168, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.browse-file-btn {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.upload-icon {
+  font-size: 40px;
+  margin: 0 auto;
+}
+.file-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+.file-icon {
+  font-size: 30px;
+}
+.delete-icon {
+  font-size: 17px;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.back-icon {
+  font-size: 20px;
+}
 
 
-
+.inquiry-bg {
+  background:  
+    linear-gradient(
+      rgba(0, 0, 0, 0.147), 
+      rgba(0, 0, 0, 0.327)
+    ),
+    /* bottom, image */
+    url('/public/images/inquiry-bg-img.jpeg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
 
 @media screen and (max-width: 768px) {
   .hamburger {

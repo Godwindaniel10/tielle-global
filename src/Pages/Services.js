@@ -5,7 +5,13 @@ import OurWork from "./OurWork";
 
 export default function Services() {
   return (
-    <div className="w-full h-[auto] border-t-[1px] border-[#a3a3a342] pt-[7rem] relative" id="services">
+    <div
+      className="w-full h-[auto] border-t-[1px] border-[#a3a3a342] pt-[7rem] relative"
+      id="services"
+      data-aos="fade-up-right"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
       <div className="w-[1110px] my-0 mx-auto h-auto services">
         <div className="h-auto">
           <IconContext.Provider
@@ -97,10 +103,20 @@ export default function Services() {
           </p>
         </div>
       </div>
-      <div className="w-[1110px] my-0 mx-auto h-auto pt-[7rem] z-10 bg-[#fff]">
+      <div className="w-[1110px] my-0 mx-auto h-auto pt-[7rem] z-10">
         <div className="flex justify-between items-center">
-          <div className="w-[600px] h-[550px] mr-[4rem] bg-[url('https://graphicsfamily.com/wp-content/uploads/2020/10/Professional-Bi-fold-Brochure-Design-Free-psd-1180x944.jpg')] bg-center bg-cover"></div>
-          <div className="w-[450px] h-auto relative">
+          <div
+            className="w-[600px] h-[550px] mr-[4rem] bg-[url('https://graphicsfamily.com/wp-content/uploads/2020/10/Professional-Bi-fold-Brochure-Design-Free-psd-1180x944.jpg')] bg-center bg-cover"
+            data-aos="fade-up-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          ></div>
+          <div
+            className="w-[450px] h-auto relative"
+            data-aos="fade-up-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <h1 className="text-[40px] about-header">
               See wide range of our services
             </h1>
@@ -117,11 +133,11 @@ export default function Services() {
               souvenirs. We also do bespoke packages to suit your individual
               unique needs.
             </p>
-           <div className="w-[165px] h-[12px] bg-[#FAD051] absolute top-[6rem] right-[18rem] service-yellow"></div> 
+            <div className="w-[165px] h-[12px] bg-[#FAD051] absolute top-[6rem] right-[18rem] service-yellow -z-10"></div>
           </div>
         </div>
       </div>
-      <OurWork/>
+      <OurWork />
     </div>
   );
 }
